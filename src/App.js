@@ -30,11 +30,7 @@ function App() {
             <h3 className='portfolioHead'>Projects I have worked on</h3>
           </div>
           <div className='fluid portfolio' style={{ marginBottom: 50 }}>
-            <p style={{ fontSize: '1.5em' }} className='portfolioHead'>Chat Applications, Call center application, Pricing & Promotions applications</p>
-          </div>
-          <div style={{ marginBottom: 50, marginLeft:100, }}>
-            <h4>Libraries / Frameworks I have worked on</h4>
-            <p>ReactJS, ReactNative, NodeJS, PHP, Git, AngularJS, Firebase, MongoDB, MySQL, GraphQL, ChartIQ, Twilio</p>
+            <p style={{ fontSize: '1.5em' }} className='portfolioHead'>Chat Applications, Call center application, Pricing & Promotions applications, No code applications</p>
           </div>
           <div id='contact' className='fluid contact-view'>
             <div className='center'>
