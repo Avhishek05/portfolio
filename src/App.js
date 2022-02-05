@@ -1,29 +1,59 @@
-import { useEffect, useState } from 'react';
 import './App.css';
 import { constants } from './const';
 
 function App() {
 
+  const twitter = 'https://twitter.com/avhishek_ydv';
+  const linkedIn = 'https://www.linkedin.com/in/avhishekydv/';
+  const instagram = 'https://www.instagram.com/avhishek_ydv';
+  const stackoverflow = 'https://stackoverflow.com/users/7435489/abhi';
+
   return (
     <div className="App">
-      <h2>Hi, I am {constants.name}</h2>
-
-      <h5>Libraries / Frameworks I have worked on</h5>
-      ReactJS, ReactNative NodeJs
-	PHP, Git, AngularJS, Firebase, MongoDB, MySQL, GraphQL, ChartIQ
-					ExpressJS, FeathersJS, TypeScript, Python, C++   
-      <h5>Education</h5>
-• Indian Institute of Information Technology Kota,	  2015 – 2019<br/>
-• B. Tech, Computer Science and Engineering, CGPA: 6.46/10<br/>
-• M.B.V.B, Kota	<br/>			                                             				  
-• Senior Secondary School, RBSC, 85.20%,  2014<br/> 
-• Secondary School, RBSC, 83.17%,    2012                                                                                                       
-
-      <h5>Contact with me here</h5>
-      <p><a href="https://stackoverflow.com/users/7435489/abhi" target={'_blank'}>Stackoverflow</a></p>
-      <p><a href="https://twitter.com/avhishek_ydv" target={'_blank'}>Twitter</a></p>
-      <p><a href="https://www.instagram.com/avhishek_ydv" target={'_blank'}>Instagram</a></p>
-  
+      <div className="Portfolio-Page">
+        <div id='home' className='sec1'>
+          <div className='fluid'>
+            <section>
+              <div style={{ paddingLeft: 100, }}>
+                <h3>About me:</h3>
+                <p>{constants.description.summary}</p>
+                <h3>Languages/Libraries</h3>
+                <p>{constants.description.tools}</p>
+                <h3>{'Fav. Movies & Tv Shows'}</h3>
+                <p>{constants.description.passion}</p>
+              </div>
+            </section>
+          </div>
+        </div>{/*end sec1*/}
+        <div id='portfolio' className='sec3'>
+          <div className='fluid portfolio'>
+            <h3 className='portfolioHead'>Projects I have worked on</h3>
+          </div>
+          <div className='fluid portfolio' style={{ marginBottom: 50 }}>
+            <p style={{ fontSize: '1.5em' }} className='portfolioHead'>Chat Applications, Call center application, Pricing & Promotions applications</p>
+          </div>
+          <div style={{ marginBottom: 50, marginLeft:100, }}>
+            <h4>Libraries / Frameworks I have worked on</h4>
+            <p>ReactJS, ReactNative, NodeJS, PHP, Git, AngularJS, Firebase, MongoDB, MySQL, GraphQL, ChartIQ, Twilio</p>
+          </div>
+          <div id='contact' className='fluid contact-view'>
+            <div className='center'>
+              <a target='_blank' href={twitter} className='social-button'>
+                Twitter
+              </a>
+              <a target='_blank' href={stackoverflow} className='social-button'>
+                Stackoverflow
+              </a>
+              <a target='_blank' href={linkedIn} className='social-button'>
+                LinkedIn
+              </a>
+              <a target='_blank' href={instagram} className='social-button'>
+                Instagram
+              </a>
+            </div>
+          </div>
+        </div>{/*end sec 3*/}
+      </div>
     </div>
   );
 }
